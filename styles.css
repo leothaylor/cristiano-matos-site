@@ -33,8 +33,7 @@ a { color: inherit; text-decoration: none; }
 .hero p { max-width: 720px; font-size: 1.08rem; color: rgba(255,255,255,.78); }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
 .audience { margin-top: 22px; color: rgba(255,255,255,.62); font-size: .92rem; }
-.portrait { min-height: 520px; border-radius: 34px; border: 1px solid rgba(255,255,255,.14); background: linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.02)), radial-gradient(circle at 35% 30%, rgba(195,164,109,.2), transparent 36%), linear-gradient(145deg, #233955, #0c1828); position: relative; overflow: hidden; }
-.portrait::after { content: 'Substituir por foto real do Cristiano'; position: absolute; right: 16px; bottom: 16px; padding: 8px 12px; font-size: .72rem; border-radius: 999px; background: rgba(13,26,43,.78); color: rgba(255,255,255,.78); }
+.portrait { min-height: 520px; border-radius: 34px; border: 1px solid rgba(255,255,255,.14); background: linear-gradient(160deg, rgba(13,26,43,.08), rgba(13,26,43,.18)), url('assets/cristiano-hero.jpg') center center / cover no-repeat, linear-gradient(145deg, #233955, #0c1828); position: relative; overflow: hidden; }
 section { padding: 96px 0; }
 .section-head { max-width: 760px; margin-bottom: 46px; }
 .section-head p { color: var(--muted); font-size: 1.05rem; }
@@ -53,8 +52,7 @@ section { padding: 96px 0; }
 .demand-card p { color: var(--muted); }
 .note { margin-top: 26px; color: var(--muted); max-width: 900px; }
 .about-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 64px; align-items: center; }
-.about-photo { min-height: 480px; border-radius: 34px; background: radial-gradient(circle at 70% 30%, rgba(195,164,109,.18), transparent 38%), linear-gradient(145deg, #d9d2c7, #b8aa96); position: relative; }
-.about-photo::after { content: 'Foto real recomendada'; position: absolute; left: 16px; bottom: 16px; padding: 8px 12px; border-radius: 999px; font-size: .72rem; background: rgba(255,255,255,.88); }
+.about-photo { min-height: 480px; border-radius: 34px; background: linear-gradient(180deg, rgba(13,26,43,.02), rgba(13,26,43,.12)), url('assets/cristiano-sobre.jpg') center center / cover no-repeat, linear-gradient(145deg, #d9d2c7, #b8aa96); position: relative; overflow: hidden; }
 .credentials { display: grid; gap: 12px; margin-top: 28px; }
 .credential { padding: 14px 0; border-top: 1px solid rgba(23,32,45,.1); }
 .online-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
