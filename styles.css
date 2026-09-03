@@ -71,6 +71,23 @@ footer { padding: 36px 0; color: var(--muted); font-size: .9rem; }
 .wa-float { display: none; position: fixed; right: 18px; bottom: 18px; z-index: 30; }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
+.card, .approach-card, .demand-card, .step, details {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background-color .22s ease;
+  will-change: transform;
+}
+.card:hover, .demand-card:hover, .step:hover, details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(13,26,43,.08);
+  border-color: rgba(195,164,109,.32);
+}
+.approach-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,.055);
+  border-color: rgba(195,164,109,.34);
+}
+.card:active, .approach-card:active, .demand-card:active, .step:active, details:active {
+  transform: translateY(-2px) scale(.995);
+}
 @media (max-width: 900px) {
   .menu a:not(.btn) { display: none; }
   .hero-grid, .about-grid, .online-grid, .final-cta { grid-template-columns: 1fr; }
@@ -83,4 +100,6 @@ footer { padding: 36px 0; color: var(--muted); font-size: .9rem; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
+  .card:hover, .approach-card:hover, .demand-card:hover, .step:hover, details:hover,
+  .card:active, .approach-card:active, .demand-card:active, .step:active, details:active { transform: none; }
 }
